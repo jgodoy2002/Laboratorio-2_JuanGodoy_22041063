@@ -89,7 +89,12 @@ public class Animales {
 
     @Override
     public String toString() {
-        return "Animales{" + "nombreC=" + nombreC + ", nombre=" + nombre + ", habitat=" + habitat + ", alimentacion=" + alimentacion + ", descripcion=" + descripcion + ", geografia=" + geografia + ", vida=" + vida + '}';
+        return "Animales :\n" + "Nombre Cientifico: " + nombreC + 
+                "\n Nombre Comun: " + nombre + "\n Habitat: " 
+                + habitat + "\n Alimentacion: " + alimentacion 
+                + "\n Descripcion: " + descripcion + 
+                "\n Geografia:" + geografia +
+                "\n Vida=" + vida ;
     }
     
     
