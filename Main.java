@@ -13,16 +13,11 @@ import java.util.ArrayList;
  * @author jcgof
  */
 public class Main {
-    static ArrayList<Animales> array = new ArrayList();
+
     public static void main(String args[]) {
-        Animales animales = new Animales("Tigresa","Po","Helado", "Kung fu","Diez","test",1);
-        array.add( new Animales("Tigresa","Po","Helado", "Kung fu","Diez","test",1));
-        
-        System.out.println(array);
-     
+        AdministradorArray array = new AdministradorArray();
+        Animales animales = new Animales("Tigresa", "Po", "Helado", "Kung fu", "Diez", "test", 1);
+
     }
-    
-    
-    
-    
+
 }
