@@ -4,49 +4,77 @@
  * and open the template in the editor.
  */
 package Laboratorio2;
+
 import java.util.ArrayList;
+
 /**
  *
  * @author jcgof
  */
 public class AdministradorArray {
+
     ArrayList<Animales> array = new ArrayList();
-    
-    public boolean eliminar(Animales a)
-    {
-        
-    }
-    
-    public boolean modificarNombreC(Animales a){
-        boolean encontrado=false;
+
+    public void crear(Animales a) {
+        String nombreC;
+        String nombre;
+        String habitat;
+        String alimentacion;
+        String descripcion;
+        String geografia;
+        int vida;
         for (int i = 0; i < array.size(); i++) {
-            if(array.get(i).getNombreC().equals(a.getNombreC()))
-            {
-                encontrado=true;
+
+        }
+    }
+
+    public boolean eliminar(Animales a) {
+        boolean encontrado = false;
+        for (int i = 0; i < array.size(); i++) {
+            if (array.get(i).getNombreC().equals(a.getNombreC())) {
+                encontrado = true;
+                array.remove(i);
+            }
+        }
+        return encontrado;
+    }
+
+    public boolean modificarNombreC(Animales a) {
+        boolean encontrado = false;
+        for (int i = 0; i < array.size(); i++) {
+            if (array.get(i).getNombreC().equals(a.getNombreC())) {
+                encontrado = true;
                 array.get(i).setNombreC(a.getNombre());
             }
         }
         return encontrado;
     }
-    
-    public void modificarunAtributo(Animales a){
-        
+
+    public void modificarunAtributo(Animales a) {
+
     }
-    
-    public void modificarTodo(Animales a){
-        
+
+    public void modificarTodo(Animales a) {
+
     }
-    
-    public void listarPosicion(int pos){
-        
+
+    public void listarPosicion(int pos) {
+        System.out.println(array.get(pos).toString());
     }
-    
-    public void listaCompleta(){
-        
+
+    public void listaCompleta() {
+        for (int i = 0; i < array.size(); i++) {
+            System.out.println(array.get(i).toString());
+        }
+
     }
-    
-    public void ListanombreCientifico(){
-        
+
+    public void ListanombreCientifico(Animales a) {
+        for (int i = 0; i < array.size(); i++) {
+            if(array.get(i).getNombreC().equals(a.getNombreC())){
+                System.out.println(array.toString());
+            }
+        }
     }
-    
+
 }
