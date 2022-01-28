@@ -71,10 +71,19 @@ public class AdministradorArray {
 
     public void ListanombreCientifico(Animales a) {
         for (int i = 0; i < array.size(); i++) {
-            if(array.get(i).getNombreC().equals(a.getNombreC())){
+            if (array.get(i).getNombreC().equals(a.getNombreC())) {
                 System.out.println(array.toString());
             }
         }
+    }
+
+    public void cadenaAlimenticia(int posA, int posB) {
+        
+       Animales a = array.get(posA);
+       if(a.getAlimentacion().contains("Carnivoro")){
+           array.get(posA).setVida(1+a.getVida());
+           array.remove(posB);
+       }
     }
 
 }
